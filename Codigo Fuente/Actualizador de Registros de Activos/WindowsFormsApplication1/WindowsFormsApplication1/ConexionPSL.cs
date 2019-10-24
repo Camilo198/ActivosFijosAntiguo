@@ -9,28 +9,28 @@ using System.Windows.Forms;
 namespace RegistrosActas
 {
     //Clase que se conecta con la base de datos.
-  public  class Conexion
+  public  class ConexionPSL
     {
-        private Conexion()
+        private ConexionPSL()
         {
         }
         //Parametros para conectarce a la base de datos
-        private static Conexion conexionObj;
-        private String serverID = "SBOGCHE037v";
-        private String dataBase = "Activos_Chevyplan";
+        private static ConexionPSL conexionObj;
+        private String serverID = "SDATCHE004FV";
+        private String dataBase = "PSL";
         // private String Security= "true";
-        private String usuario = "usr_activos";
+        private String usuario = "userpsl";
 
-        private string password = "4ct1v0s";
+        private string password = "Erppsl2017";
 
         private SqlConnection sqlConexion;
 
         //Metodo que retorna el onjeto de tipo Conexion
-        public static Conexion getConexionObj()
+        public static ConexionPSL getConexionObj()
         {
             if (conexionObj == null)
             {
-                conexionObj = new Conexion();
+                conexionObj = new ConexionPSL();
                 return conexionObj;
             }
             else
