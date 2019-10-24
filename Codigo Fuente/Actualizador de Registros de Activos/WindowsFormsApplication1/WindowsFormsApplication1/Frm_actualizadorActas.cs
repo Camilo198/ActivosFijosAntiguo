@@ -35,10 +35,10 @@ namespace RegistrosActas
         {
             // crea un objeto nuevo por cada actualizacion
             //Esto garantiza que no se hagan updates con datos reciclados.
-            ActualizacionActa act = new ActualizacionActa();
+            Actualizacion act = new Actualizacion();
             // ejecutamos el metodo que actualiza
             //y le pasamos el parametro String que se recibe del formulario
-            act.actualizarActa(t1Acta.Text);
+            act.actualizar(t1Acta.Text);
             t1Acta.Text = ""; //Limpia el campo para generar una nueva solicitud
         }
 
@@ -72,30 +72,6 @@ namespace RegistrosActas
             else if (e.KeyChar == 'S') {
                 this.Close();
             }
-        }
-
-        private void actaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void actasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            actualizadorActivosControlador acta = new actualizadorActivosControlador();
-            acta.Show();
-            
-            
-        }
-
-        private void actualizadorActasControlador_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
 
 

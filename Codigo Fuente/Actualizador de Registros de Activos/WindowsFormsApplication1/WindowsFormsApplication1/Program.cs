@@ -6,14 +6,13 @@ using System.Windows.Forms;
 
 namespace RegistrosActas
 {
-     class Program
+    static class Program
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
-        /// 
         [STAThread]
-       static  void Main()
+        static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

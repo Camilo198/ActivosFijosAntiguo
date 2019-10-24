@@ -8,27 +8,27 @@ using System.Data.SqlClient;
 
 namespace RegistrosActas
 {// clase que actualiza registros en la base de datos
-    class ActualizacionActa
+    class Actualizacion
     {
         String F_Acta;
         String consulta;
         SqlCommand comando;
-        ConexionActivos_Chevyplan c;
+        Conexion c;
         String registrosAfectados;
-        public void actualizarActa(String FrmElemento)
+        public void actualizar(String FrmElemento)
         {
             // Recibe el parametro del formulario y se lo pasa a una variable local
             F_Acta = FrmElemento;
             try
             {
 
-                c = ConexionActivos_Chevyplan.getConexionObj(); // Obtiene el Objeto Singleton de conexion con la base de datos
+                c = Conexion.getConexionObj(); // Obtiene el Objeto Singleton de conexion con la base de datos
                 // c.crearConexion(); // Crea la conexion a la base de datos
                 // valida que el campo recibido no sea Nulo ni vacio
                 if (F_Acta != null && F_Acta != "")
                 {
                     //consulta SQL
-                    consulta = "UPDATE HISTORICO set ID_ACTIVO = SUBSTRING(PLACA,4,1)+SUBSTRING(PLACA,6,10) where ACTA_ENTREGA =" + F_Acta;
+                    consulta = "UPDATE HISTORICO set ID_ACTIVO = SUBSTRING(PLACA,4,1)+SUBSTRING(PLACA,6,10) where ACTA_ENTREGA =" + F_Acta;// + "or [actcompania]="+F_Name;
 
                 }
                 else { MessageBox.Show("Ingrese un Numero de Acta Por favor", "Sin datos", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
@@ -68,7 +68,5 @@ namespace RegistrosActas
                 //Muestras excepcion si no ingresa nada
             }
         }
-
-        
     }
 }

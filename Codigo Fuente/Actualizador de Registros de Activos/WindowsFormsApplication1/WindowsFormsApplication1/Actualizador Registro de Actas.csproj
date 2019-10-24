@@ -50,17 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualizacionActa.cs" />
-    <Compile Include="ActualizacionPlaca.cs" />
-    <Compile Include="busquedaPlaca.cs" />
-    <Compile Include="ConexionActivos_Chevyplan.cs" />
-    <Compile Include="ConexionPSL.cs" />
-    <Compile Include="Frm_ActualizadorActivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_ActualizadorActivos.Designer.cs">
-      <DependentUpon>Frm_ActualizadorActivos.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Actualizacion.cs" />
+    <Compile Include="Conexion.cs" />
     <Compile Include="Frm_actualizadorActas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,9 +60,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_ActualizadorActivos.resx">
-      <DependentUpon>Frm_ActualizadorActivos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_actualizadorActas.resx">
       <DependentUpon>Frm_actualizadorActas.cs</DependentUpon>
     </EmbeddedResource>
