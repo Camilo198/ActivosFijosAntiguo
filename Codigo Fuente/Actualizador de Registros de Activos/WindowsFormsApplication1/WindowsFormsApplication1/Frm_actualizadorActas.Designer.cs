@@ -35,11 +35,7 @@
             this.p1Credo = new System.Windows.Forms.PictureBox();
             this.l2Info = new System.Windows.Forms.Label();
             this.b2Salir = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.activosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.p1Credo)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // b1Actualizar
@@ -102,32 +98,6 @@
             this.b2Salir.UseVisualStyleBackColor = true;
             this.b2Salir.Click += new System.EventHandler(this.b2Salir_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.actualizarToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(256, 24);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // actualizarToolStripMenuItem
-            // 
-            this.actualizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.activosToolStripMenuItem});
-            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.actualizarToolStripMenuItem.Text = "Actualizar";
-            // 
-            // activosToolStripMenuItem
-            // 
-            this.activosToolStripMenuItem.Name = "activosToolStripMenuItem";
-            this.activosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.activosToolStripMenuItem.Text = "Activos";
-            this.activosToolStripMenuItem.Click += new System.EventHandler(this.activosToolStripMenuItem_Click);
-            // 
             // actualizadorActasControlador
             // 
             this.AcceptButton = this.b1Actualizar;
@@ -142,10 +112,8 @@
             this.Controls.Add(this.t1Acta);
             this.Controls.Add(this.l1Acta);
             this.Controls.Add(this.b1Actualizar);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "actualizadorActasControlador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -154,8 +122,6 @@
             this.Load += new System.EventHandler(this.frm_actLoad);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.actualizadorActasControlador_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.p1Credo)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,9 +135,6 @@
         private System.Windows.Forms.PictureBox p1Credo;
         private System.Windows.Forms.Label l2Info;
         private System.Windows.Forms.Button b2Salir;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem activosToolStripMenuItem;
 
     }
 }

@@ -50,28 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualizacionActa.cs" />
-    <Compile Include="ActualizacionPlaca.cs" />
-    <Compile Include="busquedaPlaca.cs" />
+    <Compile Include="ActualizacionIdActivoActa.cs" />
+    <Compile Include="BusquedaPlacasActas.cs" />
+    <Compile Include="Modelo_Frm_actualizadorActas.cs" />
     <Compile Include="ConexionActivos_Chevyplan.cs" />
-    <Compile Include="ConexionPSL.cs" />
-    <Compile Include="Frm_ActualizadorActivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_ActualizadorActivos.Designer.cs">
-      <DependentUpon>Frm_ActualizadorActivos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_actualizadorActas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_actualizadorActas.Designer.cs">
       <DependentUpon>Frm_actualizadorActas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcesamientoDePlaca_IdActivo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_ActualizadorActivos.resx">
-      <DependentUpon>Frm_ActualizadorActivos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_actualizadorActas.resx">
       <DependentUpon>Frm_actualizadorActas.cs</DependentUpon>
     </EmbeddedResource>

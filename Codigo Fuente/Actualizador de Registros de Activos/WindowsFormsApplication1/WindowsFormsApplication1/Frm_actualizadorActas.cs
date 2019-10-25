@@ -35,10 +35,16 @@ namespace RegistrosActas
         {
             // crea un objeto nuevo por cada actualizacion
             //Esto garantiza que no se hagan updates con datos reciclados.
-            ActualizacionActa act = new ActualizacionActa();
+            Modelo_Frm_actualizadorActas mfa = new Modelo_Frm_actualizadorActas();
             // ejecutamos el metodo que actualiza
             //y le pasamos el parametro String que se recibe del formulario
-            act.actualizarActa(t1Acta.Text);
+            try
+            {
+                mfa.ActualizarRegistrosHistoricos(Int32.Parse(t1Acta.Text));
+            }
+            catch (FormatException) {
+                MessageBox.Show("Entrada Incorrecta Ingrese un numero de Acta Valido");
+            }
             t1Acta.Text = ""; //Limpia el campo para generar una nueva solicitud
         }
 
@@ -74,24 +80,7 @@ namespace RegistrosActas
             }
         }
 
-        private void actaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void actasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            actualizadorActivosControlador acta = new actualizadorActivosControlador();
-            acta.Show();
-            
-            
-        }
 
         private void actualizadorActasControlador_FormClosed(object sender, FormClosedEventArgs e)
         {
