@@ -16,7 +16,7 @@ namespace RegistrosActas
         }
         //Parametros para conectarce a la base de datos
         private static ConexionActivos_Chevyplan conexionObj;
-        private String serverID = "SBOGCHE037v";
+        private String serverID = "SBOGCHE008V";
         private String dataBase = "Activos_Chevyplan";
         // private String Security= "true";
         private String usuario = "usr_activos";
